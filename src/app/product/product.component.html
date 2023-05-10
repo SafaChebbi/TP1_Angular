@@ -1,0 +1,9 @@
+<h2>Détails Produit</h2>
+<ul>
+    <li>TITLE: {{produit.title}}</li>
+    <li>PRICE: {{produit.price}}</li>
+    <li>QUANTITY: {{produit.quantity}}</li>
+    <li>LIKE: {{produit.like}}</li>
+</ul>
+<button [disabled]="produit.quantity===0" (click)="commander()"> Buy</button>
+<button (click)="liker()"> Like (y)</button>
